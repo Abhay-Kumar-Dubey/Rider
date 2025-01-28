@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:rider/Screens/onboarding1.dart';
+import 'package:rider/Screens/document_submission.dart';
+import 'package:rider/Screens/personal_detail.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Onboarding1(),
+      home: DocumentSubmission(),
     );
   }
 }

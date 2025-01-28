@@ -1,6 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:rider/Screens/otpScreen.dart';
 
 class Onboarding1 extends StatelessWidget {
   const Onboarding1({super.key});
@@ -152,7 +153,12 @@ class Onboarding1 extends StatelessWidget {
                         )),
                   ),
                   TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => otpScreen()));
+                      },
                       child: SvgPicture.asset('lib/images/Group 1830.svg'))
                 ],
               ),
